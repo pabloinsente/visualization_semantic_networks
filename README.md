@@ -1,4 +1,4 @@
-# Semantic network's visualization with R 
+# Semantic networks visualization with R 
 ### Author: Pablo Caceres
 ### Last update: 3/16/2019
 
