@@ -61,19 +61,19 @@ network.size(net.n)
 gden(net.n)
 ## Density: 0.21178955453149 ##
 
-# Components: is a subgroup in which all actors are connected, directly or indirectly. 
-
-#Find strong components
-comp = components(net.n,connected="strong")
-# check help(component.dist) for details about how components are identified
-## Components: 2 ##
-
 # Diameter (geodesic distance): is the longest of the shortest paths across all pairs of nodes
 # Is measure of compactness
 lgc <- component.largest(net.n,result="graph")
 gd <- geodist(lgc)
 max(gd$gdist)
 ## Diameter: 3 ##
+
+# Components: is a subgroup in which all actors are connected, directly or indirectly. 
+
+#Find strong components
+comp = components(net.n,connected="strong")
+# check help(component.dist) for details about how components are identified
+## Components: 2 ##
 
 # Clustering coefficient: is the presence of clustering, or the tendency to formed closed triangles
 
